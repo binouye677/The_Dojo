@@ -1,0 +1,14 @@
+def compute_nth_fib(nombre1, nombre2, hombre):
+    # if base case ...
+        # return base case value ...
+    # else ...
+        # recursively call compute_nth_fib() ...
+    if hombre == 0:
+        return nombre2
+    else:
+        return compute_nth_fib(nombre2, nombre1 + nombre2, hombre - 1, )
+if __name__ == "__main__":
+    num1 = 0
+    num2 = 1
+    rewind = int(input())
+    print(compute_nth_fib(num1, num2, rewind))
